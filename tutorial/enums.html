@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+html *
+{
+   font-size: 40px !important;
+   color: #000 !important;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Types</h1>
+<table border='0' cellpadding='50'>
+<tr>
+<td valign='top'>
+<b><pre>
+enum A {
+   ONE(1),
+   TWO(2),
+   THREE(3);
+
+   const x;
+   
+   new(x) {
+      this.x = x;
+   }
+}
+
+class B {
+   const x;
+
+   new(x) {
+      this.x = x;
+   }
+}
+</pre></b>
+</td>
+<td valign='top'>
+<b><pre>
+trait C {
+   func();
+}
+
+class D extends B with C {
+   const y;
+
+   new(x, y) : super(x) {
+      this.y = y;
+   }
+
+   override func() {
+      return x+y;
+   }
+}
+</pre></b>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

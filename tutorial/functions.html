@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+html *
+{
+   font-size: 35px !important;
+   color: #000 !important;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Functions</h1>
+<table border='0' cellpadding='50'>
+<tr>
+<td valign='top'>
+<b><pre>
+function func(): (a, b) {
+   return (x, y) -> Math.max(x, y);
+}
+
+function func(): (a, b) {
+   return Math::max;
+}
+
+function func(): Runnable { // functions can be coerced
+   return -> println('it ran');
+}
+
+function func(x, y, func: (a, b)) {
+   return func(x, y);
+}
+</pre></b>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
