@@ -1,5 +1,0 @@
-try {
-   throw new IllegalStateException("some error");
-} catch(e: IllegalStateException) {
-   e.printStackTrace();
-}

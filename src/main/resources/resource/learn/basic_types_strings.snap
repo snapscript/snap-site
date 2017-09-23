@@ -1,3 +1,0 @@
-var string = 'Hello World!'; // literal string
-var template = "The sum of 1 and 2 is ${1 + 2}"; // interpolated string
-var concat = "The sum of 1 and 2 is " + (1 + 2); // concatenation
